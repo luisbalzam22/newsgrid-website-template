@@ -1,0 +1,32 @@
+@import url('./style.css');
+
+@media only screen and (max-width: 767px){
+    *{
+        text-align: center;
+    }
+    #articles-grid, .article-grid, .footer-section{
+        grid-template-columns: 1fr;
+    }
+
+    #articles-grid >*, #article-grid >*{
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        grid-template-areas: unset;
+    }
+    [class^="article-thumb-"] >*{
+        grid-area: unset !important;
+    }
+
+    header .flex-container{
+        flex-direction: column;
+
+    }
+    header .socials{
+        margin: 1.5rem 0;
+    }
+
+
+    
+
+}
